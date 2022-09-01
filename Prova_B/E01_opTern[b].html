@@ -15,11 +15,15 @@
     //Calcule os pontos e apresente a classificação do Professor.
 
     //ENTRADA
-
-
+const anos = parseInt(prompt("informe quantos anos de carreira possui"));
+const projetoPesquisa = parseInt(prompt("informe quantos projetos de pesquisa já coordenou"));
+const projetoExtensao = parseInt(prompt("informe quantos projetos de extensão orientou"));
+const TCCs = parseInt(prompt("informe a quantidade de TCCs que orientou"));
+let resultado;
+let pontuaçao = anos * 1.5 + projetoExtensao * 4 + projetoPesquisa * 4 + TCCs * 3;
     //PROCESSAMENTO
-
-
+resultado = ( pontuaçao > 20) ? "AGREGADO" : "CONVIDADO";
     //SAÍDA
+document.write(`${resultado}, ${pontuaçao}`);
 
 </script>

@@ -10,11 +10,15 @@
     //Apresente o tempo médio utilizado pelos alunos e apresente também o nível do problema.
 
     //ENTRADA
-
-
+const tempo1 = Number(prompt("informe o tempo do 1° aluno"));
+const tempo2 = Number(prompt("informe o tempo dp 2° aluno"));
+const tempo3 = Number(prompt("informe o tempo dp 3° aluno"));
+const tempo4 = Number(prompt("informe o tempo dp 4° aluno"));
+const tempo5 = Number(prompt("informe o tempo dp 5° aluno"));
+const media = ((tempo1 + tempo2 + tempo3 + tempo4 + tempo5) / 5)
+let resultado;
     //PROCESSAMENTO
-
-
+resultado = ( media <= 2) ? "INFANTIL" : ( media  <= 5) ? "TREINAMENTO" : "AMISTOSO";
     //SAÍDA
-
+document.write(`a media dos alunos é de ${media} minutos, ${resultado}`);
 </script>

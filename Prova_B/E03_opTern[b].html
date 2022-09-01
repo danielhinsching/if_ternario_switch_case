@@ -11,11 +11,11 @@
     //Apresente o valor final a ser pago pelo terreno, considerando o desconto ou acréscimo especificado para a quantidade de anos de financiamento.
 
     //ENTRADA
-
-
+const valor = Number(prompt("informe o valor do terreno"));
+const anos = Number(prompt("informe em quantos anos deseja pagar"));
+let resultado;
     //PROCESSAMENTO
-
-
+resultado = (anos <= 5) ? "o valor a ser pago pelo terreno será de " + (valor - valor * 0.05).toFixed(2) : (anos <= 10) ? "o valor a ser pago pelo terreno será de " + (valor + valor * 0.15).toFixed(2) : "o valor a ser pago pelo terreno será de " + (valor + valor * 0.30).toFixed(2); 
     //SAÍDA
-
+alert(resultado);
 </script>

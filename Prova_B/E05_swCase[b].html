@@ -11,11 +11,22 @@
     //Dica: Use M para Matutino, V para Vespertino, N para Noturno.
 
     //ENTRADA
-
-
+const turno = prompt("informe seu turno M-Matutino|V-Vespertino|N-Noturno")
+let resultado;
     //PROCESSAMENTO
-
-
+switch (turno) {
+    case "M":
+    resultado = "O seu turno de trabalho é das 05:00 - 13:00";   
+        break;
+    case "V":
+    resultado = "O seu turno de trabalho é das 13:00 - 22:00";
+        break;
+    case "N": 
+    resultado = "O seu turno de trabalho é das 22:00 - 05:00"
+    default:
+    resultado = "Turno de trabalho invalido"
+        break;
+}
     //SAÍDA
-
+alert(resultado)
 </script>

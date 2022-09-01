@@ -11,11 +11,23 @@
     //Calcule e apresente o valor total a ser pago pelo autor, de acordo com o tipo da impressão e a quantidade de páginas.
 
     //ENTRADA
-
-
+const tipoLivro = prompt("informe se o livro será | A CORES | PRETO E BRANCO | ANIMAÇÃO |").toUpperCase();
+const paginas = parseInt(prompt("informe a quantidade de páginas"));
+let valorLivro = paginas * 0.1;
+let resultado;
     //PROCESSAMENTO
-
+switch (tipoLivro) {
+    case "A CORES":
+    resultado = (valorLivro + valorLivro * 0.1);   
+        break;
+    case "PRETO E BRANCO":
+    resultado = (valorLivro - valorLivro * 0.05);
+        break;
+    case "ANIMAÇÃO":
+    resultado = (valorLivro + valorLivro * 0.15); 
+        break;
+}
 
     //SAÍDA
-
+document.write(`o valor do livro será de ${resultado} reais`);
 </script>
